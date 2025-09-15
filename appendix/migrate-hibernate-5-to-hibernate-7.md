@@ -149,5 +149,6 @@ By following these steps, you will successfully migrate your project to Hibernat
 ---
 
 References:
+* [Hibernate 6.0 Migration Guide](https://docs.jboss.org/hibernate/orm/6.0/migration-guide/migration-guide.html)
 * [Hibernate 7.0 Migration Guide](https://docs.jboss.org/hibernate/orm/7.0/migration-guide/migration-guide.html)
 * [Hibernate 7.1 Migration Guide](https://docs.jboss.org/hibernate/orm/7.1/migration-guide/migration-guide.html) 
