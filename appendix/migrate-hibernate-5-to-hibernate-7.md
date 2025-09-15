@@ -144,7 +144,7 @@ Apply this to other JPA entities in your project.
 
 ---
 
-By following these steps, you will successfully migrate your project to Hibernate 7.1. 
+By following these steps, you will successfully migrate your project to Hibernate 7.1. :smile:
 
 ---
 
