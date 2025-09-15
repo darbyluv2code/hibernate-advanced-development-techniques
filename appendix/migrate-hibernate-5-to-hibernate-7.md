@@ -141,8 +141,6 @@ Apply this to other JPA entities in your project.
 
 * [ ] Build runs on **JDK 17+** and compiles after `javax`→`jakarta` imports
 * [ ] MySQL driver switched to `com.mysql:mysql-connector-j`
-* [ ] Dialect is `org.hibernate.dialect.MySQLDialect` (or omitted for autodetect)
-* [ ] `hibernate.cfg.xml` still uses the **3.0 DTD** identifier/URL
 
 ---
 
