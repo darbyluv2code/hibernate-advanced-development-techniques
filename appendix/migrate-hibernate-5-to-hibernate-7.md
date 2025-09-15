@@ -135,7 +135,7 @@ Apply this to other JPA entities in your project.
     <!-- Echo the SQL to stdout -->
     <property name="show_sql">true</property>
 
-    <!-- Auto create tables -->
+    <!-- Auto create the tables -->
     <property name="hibernate.hbm2ddl.auto">create</property>
 
     <!-- Set the current session context -->
