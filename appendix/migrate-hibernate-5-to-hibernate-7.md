@@ -1,17 +1,21 @@
-# Hibernate 5 to 7.1 Migration Guide (MySQL)
+# Hibernate 5 to 7 Migration Guide (MySQL)
 
-Migrating from Hibernate 5.x to 7.1 pulls in the API and package changes introduced in 6.x (Jakarta, dialects) plus 7.x refinements. The steps below modernize your POM, imports, XML.
+If you’re ready to move up to Hibernate 7, you’ll be happy to know the transition is **smooth and straightforward**. Most of the updates are small adjustments carried over from the 6.x series (such as Jakarta package names and updated dialects), along with a few refinements in Hibernate 7.  
+
+## Important Notes
+
+- All of the **core Hibernate concepts and course content work seamlessly in Hibernate 7**.  
+- There are **no disruptive changes** ... just a handful of refinements to keep everything aligned with the latest Hibernate and Jakarta standards.  
+- You’ll continue using the same familiar APIs and mappings; this migration simply **modernizes the libraries** so your project runs on the latest version with ease.  
+
+Below is a step-by-step guide I created to help you migrate your project to Hibernate 7.  
+
+---
 
 ## Software Versions
 - Java: 17+
 - Hibernate ORM: 7.1.x (e.g., 7.1.1.Final)
 - MySQL Connector/J: 9.x
-
-## Important Notes
-
-- All of the **key Hibernate concepts and course content still work in Hibernate 7.1**.  
-- There are **no groundbreaking changes**. The steps below are mostly **minor refinements** to ensure compatibility with the latest Hibernate and Jakarta standards.  
-- You can continue to use the same Hibernate APIs and mappings you learned; this migration simply **modernizes the software libraries**.
 
 ---
 
@@ -150,7 +154,7 @@ Apply this to other JPA entities in your project.
 
 ---
 
-By following these steps, you will successfully migrate your project to Hibernate 7.1. :smile:
+By following these steps, you will successfully migrate your project to Hibernate 7. :smile:
 
 ---
 
