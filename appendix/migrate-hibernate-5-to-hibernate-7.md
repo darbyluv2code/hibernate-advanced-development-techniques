@@ -1,4 +1,4 @@
-# Hibernate 5 → 7.1 Migration Guide (MySQL)
+# Hibernate 5 to 7.1 Migration Guide (MySQL)
 
 Migrating from Hibernate 5.x to 7.1 pulls in the API and package changes introduced in 6.x (Jakarta, dialects) plus 7.x refinements. The steps below modernize your POM, imports, XML, and bootstrap and call out gotchas found in real upgrades.
 
