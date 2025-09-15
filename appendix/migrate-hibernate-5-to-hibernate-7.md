@@ -7,6 +7,12 @@ Migrating from Hibernate 5.x to 7.1 pulls in the API and package changes introdu
 - Hibernate ORM: 7.1.x (e.g., 7.1.1.Final)
 - MySQL Connector/J: 9.x
 
+## Important Notes
+
+- All of the **key Hibernate concepts and course content still work in Hibernate 7.1**.  
+- There are **no groundbreaking changes**. The steps below are mostly **minor refinements** to ensure compatibility with the latest Hibernate and Jakarta standards.  
+- You can continue to use the same Hibernate APIs and mappings you learned; this migration simply **modernizes the software libraries**.
+
 ---
 
 ## 1) Update Maven coordinates and Java level
