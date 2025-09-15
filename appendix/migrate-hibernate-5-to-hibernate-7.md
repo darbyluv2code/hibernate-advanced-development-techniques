@@ -98,8 +98,9 @@ Apply this to other JPA entities in your project.
 
 **What to change**
 
+* Update `connection.driver_class` to use modern MySQL JDBC driver
+* Updae `connection.url` to drop additional parameters
 * Prefer `org.hibernate.dialect.MySQLDialect` (or omit to let Hibernate auto-detect).
-* Keep your DDL strategy. Hibernate’s legacy `hibernate.hbm2ddl.auto` and the JPA standard key both work; pick one style.
 
 **Suggested XML**
 
