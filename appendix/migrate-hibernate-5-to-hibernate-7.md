@@ -145,3 +145,9 @@ Apply this to other JPA entities in your project.
 ---
 
 By following these steps, you will successfully migrate your project to Hibernate 7.1. 
+
+---
+
+References:
+* [Hibernate 7.0 Migration Guide](https://docs.jboss.org/hibernate/orm/7.0/migration-guide/migration-guide.html)
+* [Hibernate 7.1 Migration Guide](https://docs.jboss.org/hibernate/orm/7.1/migration-guide/migration-guide.html) 
