@@ -1,5 +1,7 @@
 # Hibernate: Advanced Development Techniques
 
+![Build Status](https://github.com/darbyluv2code/hibernate-advanced-development-techniques/actions/workflows/build.yml/badge.svg)
+
 Source code for the course: [Hibernate: Advanced Development Techniques](http://www.luv2code.com/hibernate-advanced-github)
 
 If you have questions or need tech support, post your questions to the [classroom discussion forum](https://www.udemy.com/course/hibernate-tutorial-advanced/learn/v4/questions).
