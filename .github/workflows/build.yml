@@ -1,0 +1,281 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-01-set:
+    name: "Solution 01: Map Collections Set"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 01: Map Collections Set"
+        cd solution-code-hibernate-hb-01-map-collections-set
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-01-map-collections-set"
+          exit 1
+        }
+        echo "Solution 01 completed successfully"
+
+  build-02-list:
+    name: "Solution 02: Map Collections List"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 02: Map Collections List"
+        cd solution-code-hibernate-hb-02-map-collections-list
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-02-map-collections-list"
+          exit 1
+        }
+        echo "Solution 02 completed successfully"
+
+  build-03-map:
+    name: "Solution 03: Map Collections Map"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 03: Map Collections Map"
+        cd solution-code-hibernate-hb-03-map-collections-map
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-03-map-collections-map"
+          exit 1
+        }
+        echo "Solution 03 completed successfully"
+
+  build-04-sortedset:
+    name: "Solution 04: Map Collections SortedSet"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 04: Map Collections SortedSet"
+        cd solution-code-hibernate-hb-04-map-collections-sortedset
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-04-map-collections-sortedset"
+          exit 1
+        }
+        echo "Solution 04 completed successfully"
+
+  build-05-sortedmap:
+    name: "Solution 05: Map Collections SortedMap"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 05: Map Collections SortedMap"
+        cd solution-code-hibernate-hb-05-map-collections-sortedmap
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-05-map-collections-sortedmap"
+          exit 1
+        }
+        echo "Solution 05 completed successfully"
+
+  build-06-inheritance-singletable:
+    name: "Solution 06: Inheritance Single Table"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 06: Inheritance Single Table"
+        cd solution-code-hibernate-hb-inheritance-01-singletable
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-inheritance-01-singletable"
+          exit 1
+        }
+        echo "Solution 06 completed successfully"
+
+  build-07-inheritance-tableperclass:
+    name: "Solution 07: Inheritance Table Per Class"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 07: Inheritance Table Per Class"
+        cd solution-code-hibernate-hb-inheritance-02-tableperclass
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-inheritance-02-tableperclass"
+          exit 1
+        }
+        echo "Solution 07 completed successfully"
+
+  build-08-inheritance-joined:
+    name: "Solution 08: Inheritance Joined"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 08: Inheritance Joined"
+        cd solution-code-hibernate-hb-inheritance-03-joined
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-inheritance-03-joined"
+          exit 1
+        }
+        echo "Solution 08 completed successfully"
+
+  build-09-inheritance-mappedsuperclass:
+    name: "Solution 09: Inheritance Mapped Superclass"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 09: Inheritance Mapped Superclass"
+        cd solution-code-hibernate-hb-inheritance-04-mappedsuperclass
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-inheritance-04-mappedsuperclass"
+          exit 1
+        }
+        echo "Solution 09 completed successfully"
+
+  build-10-map-components:
+    name: "Solution 10: Map Components"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 10: Map Components"
+        cd solution-code-hibernate-hb-map-components
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-map-components"
+          exit 1
+        }
+        echo "Solution 10 completed successfully"
+
+  build-11-map-enum:
+    name: "Solution 11: Map Enum"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Build project
+      run: |
+        set -e
+        echo "Building Solution 11: Map Enum"
+        cd solution-code-hibernate-hb-map-enum
+        mvn clean compile -B -q || {
+          echo "Failed to compile solution-code-hibernate-hb-map-enum"
+          exit 1
+        }
+        echo "Solution 11 completed successfully"
