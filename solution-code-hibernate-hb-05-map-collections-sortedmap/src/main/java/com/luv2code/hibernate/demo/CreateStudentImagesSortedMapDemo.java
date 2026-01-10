@@ -24,7 +24,7 @@ public class CreateStudentImagesSortedMapDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-		//create the object
+			//create the object
 			Student tempStudent = new Student("John","Doe","john@luv2code.com");
 			Map<String, String> theImages = tempStudent.getImages();
 			
@@ -32,19 +32,19 @@ public class CreateStudentImagesSortedMapDemo {
 			theImages.put("photo2.jpg", "Photo 2");
 			theImages.put("photo3.jpg", "Photo 3");
 
-		//start a transaction
+			//start a transaction
 			session.beginTransaction();
 			
-		//save the object
+			//save the object
 			System.out.println("Saving the student and images..");
 			session.persist(tempStudent);
 			
-		//commit the transaction
+			//commit the transaction
 			session.getTransaction().commit();
 			System.out.println("Done!!");
 		}
 		finally {
-		//clean up code
+			//clean up code
 			session.close();
 			factory.close();
 		}
