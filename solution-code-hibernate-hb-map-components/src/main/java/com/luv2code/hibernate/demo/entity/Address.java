@@ -1,7 +1,7 @@
 package com.luv2code.hibernate.demo.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 
 @Embeddable //instead of @Entity
 public class Address {
