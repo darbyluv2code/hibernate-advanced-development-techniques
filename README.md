@@ -4,6 +4,18 @@
 
 Source code for the course: [Hibernate: Advanced Development Techniques](http://www.luv2code.com/hibernate-advanced-github)
 
+## Hibernate Version
+
+This repository uses **Hibernate ORM 7.2.0.Final** with **Java 25**.
+
+### Requirements
+- Java 25 or higher
+- Maven 3.6+
+- MySQL 9.0+
+
+### Important Note for Students
+The video lectures show code with `javax.persistence.*` imports. The updated codebase uses `jakarta.persistence.*` imports. All concepts and functionality remain identical. See [UPGRADE_NOTES.md](UPGRADE_NOTES.md) for details.
+
 If you have questions or need tech support, post your questions to the [classroom discussion forum](https://www.udemy.com/course/hibernate-tutorial-advanced/learn/v4/questions).
 
 Happy coding!
