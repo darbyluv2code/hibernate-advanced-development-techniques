@@ -32,7 +32,7 @@ public class CreateStudentImagesListDemo {
 			theImages.add("photo2.jpg");
 			theImages.add("photo3.jpg");
 			theImages.add("photo4.jpg");
-			theImages.add("photo4.jpg"); //Duplicate, filtered at java level by HashSet!!!
+			theImages.add("photo4.jpg"); //Duplicate allowed, List can contain duplicate elements
 			
 		//start a transaction
 			session.beginTransaction();
