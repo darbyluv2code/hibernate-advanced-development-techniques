@@ -1,7 +1,7 @@
 package com.luv2code.hibernate.demo.entity;
 
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
 
 @Entity
 @DiscriminatorValue(value="STUDENT")
