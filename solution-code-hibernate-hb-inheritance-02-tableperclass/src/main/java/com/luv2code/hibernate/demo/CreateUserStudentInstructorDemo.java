@@ -32,8 +32,8 @@ public class CreateUserStudentInstructorDemo {
 
 			// save the student object
 			System.out.println("Saving the student and instructor...");
-			session.save(tempStudent);
-			session.save(tempInstructor);
+			session.persist(tempStudent);
+			session.persist(tempInstructor);
 
 			// commit transaction
 			session.getTransaction().commit();

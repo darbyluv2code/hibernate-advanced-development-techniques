@@ -3,14 +3,15 @@ package com.luv2code.hibernate.demo.entity;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OrderBy;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name="student")
@@ -31,7 +32,7 @@ public class Student {
 		
 	@ElementCollection
 	@CollectionTable(name="image")
-@org.hibernate.annotations.OrderBy(clause = "file_name") //default asc
+	@OrderBy("file_name ASC")
 	@Column(name="file_name") //defaults to images
 	private Set<String> images = new LinkedHashSet<String>();
 	
