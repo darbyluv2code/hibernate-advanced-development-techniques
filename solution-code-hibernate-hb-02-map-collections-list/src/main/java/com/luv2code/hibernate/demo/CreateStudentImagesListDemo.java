@@ -24,7 +24,7 @@ public class CreateStudentImagesListDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-		//create the object
+			//create the object
 			Student tempStudent = new Student("John","Doe","john@luv2code.com");
 			List<String> theImages = tempStudent.getImages();
 			
@@ -33,20 +33,20 @@ public class CreateStudentImagesListDemo {
 			theImages.add("photo3.jpg");
 			theImages.add("photo4.jpg");
 			theImages.add("photo4.jpg"); //Duplicate allowed, List can contain duplicate elements
-			
-		//start a transaction
+
+			//start a transaction
 			session.beginTransaction();
-			
-		//save the object
+
+			//save the object
 			System.out.println("Saving the student and images..");
 			session.persist(tempStudent);
-			
-		//commit the transaction
+
+			//commit the transaction
 			session.getTransaction().commit();
 			System.out.println("Done!!");
 		}
 		finally {
-		//clean up code
+			//clean up code
 			session.close();
 			factory.close();
 		}
