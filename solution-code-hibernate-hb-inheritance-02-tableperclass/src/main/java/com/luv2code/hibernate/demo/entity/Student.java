@@ -1,6 +1,6 @@
 package com.luv2code.hibernate.demo.entity;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 
 @Entity
 public class Student extends User {

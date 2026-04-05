@@ -147,6 +147,39 @@ Apply this to other JPA entities in your project.
 
 ---
 
+## 4) Special Case: Replace Deprecated @OrderBy Annotation
+
+**What to change**
+
+The Hibernate-specific `@org.hibernate.annotations.OrderBy` annotation has been deprecated since Hibernate 6.3 in favor of the JPA standard `@jakarta.persistence.OrderBy`.
+
+**Migration Approach**
+
+Replace:
+```java
+@org.hibernate.annotations.OrderBy(clause = "file_name")
+```
+
+With:
+```java
+@OrderBy("file_name ASC")
+```
+
+And add the import:
+```java
+import jakarta.persistence.OrderBy;
+```
+
+**Benefits of JPA Standard @OrderBy**
+1. More portable across JPA implementations
+2. Future-proof (not deprecated)
+3. Provides identical functionality for simple ordering
+4. Industry standard annotation
+
+**Note**: The `@org.hibernate.annotations.SortComparator` annotation remains fully supported and is the correct way to specify custom comparators for in-memory sorting of collections.
+
+---
+
 ## Quick verification checklist
 
 * [ ] Build runs on **JDK 17+** and compiles after `javax`→`jakarta` imports
