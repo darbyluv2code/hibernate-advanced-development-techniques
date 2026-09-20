@@ -1,15 +1,16 @@
-# Hibernate 7.2 Upgrade Notes
+# Hibernate 7.4 Upgrade Notes
 
-This codebase has been upgraded from Hibernate 5.3.6 to Hibernate 7.2.0.
+This codebase has been upgraded from Hibernate 5.3.6 to Hibernate 7.4.10.
 
 ## What Changed
 
-1. Java Version: Now requires Java 25+ (previously Java 11)
+1. Java Version: Now requires Java 26+ (previously Java 11)
 2. Package Names: All javax.persistence.* imports changed to jakarta.persistence.*
-3. Maven Dependencies: Updated to Hibernate ORM 7.2.0.Final and MySQL Connector/J 9.5.0
+3. Maven Dependencies: Updated to Hibernate ORM 7.4.10.Final and MySQL Connector/J 9.5.0
 4. JDBC Driver: Standardized to com.mysql.cj.jdbc.Driver (legacy driver removed)
 5. MySQL Dialect: Simplified to org.hibernate.dialect.MySQLDialect
 6. OrderBy Annotation: Replaced deprecated Hibernate @OrderBy with JPA standard @OrderBy
+7. Session Lookup: Replaced deprecated session.get() with session.find() in the GetStudentImagesDemo classes
 
 ## What Stayed the Same
 
@@ -29,9 +30,14 @@ Additionally, one video shows the deprecated Hibernate-specific @OrderBy annotat
 - Current code: `@OrderBy("file_name ASC")` with import `jakarta.persistence.OrderBy`
 - Both achieve the same result; the updated version is JPA standard and future-proof.
 
+Also, the GetStudentImagesDemo videos for the sorted set and sorted map modules use session.get():
+- Video code: `session.get(Student.class, theId)`
+- Current code: `session.find(Student.class, theId)`
+- Both return the same result; session.get(Class, Object) is deprecated for removal in Hibernate 7.4.
+
 ## Requirements
 
-- Java 25 or higher
+- Java 26 or higher
 - Maven 3.6+
 - MySQL 9.0+
 
