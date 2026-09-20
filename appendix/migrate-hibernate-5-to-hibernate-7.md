@@ -1,21 +1,21 @@
-# Hibernate 5 to 7.2 Migration Guide (MySQL)
+# Hibernate 5 to 7.4 Migration Guide (MySQL)
 
-If you're ready to move up to Hibernate 7.2, you'll be happy to know the transition is **smooth and straightforward**. Most of the updates are small adjustments carried over from the 6.x and 7.x series (such as Jakarta package names and updated dialects), along with a few refinements in Hibernate 7.2.  
+If you're ready to move up to Hibernate 7.4, you'll be happy to know the transition is **smooth and straightforward**. Most of the updates are small adjustments carried over from the 6.x and 7.x series (such as Jakarta package names and updated dialects), along with a few refinements in Hibernate 7.4.  
 
 ## Important Notes
 
-- All of the **core Hibernate concepts and course content work seamlessly in Hibernate 7.2**.  
+- All of the **core Hibernate concepts and course content work seamlessly in Hibernate 7.4**.  
 - There are **no disruptive changes** ... just a handful of refinements to keep everything aligned with the latest Hibernate and Jakarta standards.  
 - You'll continue using the same familiar APIs and mappings; this migration simply **modernizes the libraries** so your project runs on the latest version with ease.  
-- **Hibernate 7.2 is the latest stable release** as of December 2025.
+- **Hibernate 7.4 is the latest stable release** as of September 2026.
 
-Below is a step-by-step guide I created to help you migrate your project to Hibernate 7.2.  
+Below is a step-by-step guide I created to help you migrate your project to Hibernate 7.4.  
 
 ---
 
 ## Software Versions
 - Java: 17+
-- Hibernate ORM: 7.2.x (e.g., 7.2.0.Final)
+- Hibernate ORM: 7.4.x (e.g., 7.4.10.Final)
 - MySQL Connector/J: 9.x
 
 ---
@@ -26,7 +26,7 @@ Below is a step-by-step guide I created to help you migrate your project to Hibe
 
 * **Java 17+ is required**
 * Move to the new **groupId**: `org.hibernate.orm`
-* Use a current **7.2.x** (example below pins `7.2.0.Final`)
+* Use a current **7.4.x** (example below pins `7.4.10.Final`)
 * Switch MySQL driver to `com.mysql:mysql-connector-j` (8/9 series)
 
 **Minimal `pom.xml`**
@@ -42,7 +42,7 @@ Below is a step-by-step guide I created to help you migrate your project to Hibe
   <dependency>
     <groupId>org.hibernate.orm</groupId>
     <artifactId>hibernate-core</artifactId>
-    <version>7.2.0.Final</version>
+    <version>7.4.10.Final</version>
   </dependency>
 
   <dependency>
@@ -78,7 +78,7 @@ Your final pom.xml should look like this:
     <dependency>
       <groupId>org.hibernate.orm</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>7.2.0.Final</version>
+      <version>7.4.10.Final</version>
     </dependency>
 
     <dependency>
@@ -184,7 +184,7 @@ import jakarta.persistence.OrderBy;
 
 * [ ] Build runs on **JDK 17+** and compiles after `javax`→`jakarta` imports
 * [ ] MySQL driver switched to `com.mysql:mysql-connector-j`
-* [ ] Version updated to **7.2.0.Final**
+* [ ] Version updated to **7.4.10.Final**
 
 ---
 
@@ -203,13 +203,14 @@ Hibernate 7.2 includes several improvements while maintaining full backward comp
 
 ---
 
-By following these steps, you will successfully migrate your project to Hibernate 7.2. :smile:
+By following these steps, you will successfully migrate your project to Hibernate 7.4. :smile:
 
 ---
 
 ## Version History
 
-- **Hibernate 7.2.0.Final** (Latest Stable) - December 12, 2025
+- **Hibernate 7.4.10.Final** (Latest Stable) - September 20, 2026
+- **Hibernate 7.2.0.Final** - December 12, 2025
 - **Hibernate 7.1.0.Final** - August 8, 2025
 - **Hibernate 7.0.0.Final** - May 19, 2025 - Major release with Jakarta Persistence 3.2, Apache License 2.0
 - **Hibernate 6.0.0.Final** - March 31, 2022 - Major redesign of query system and type handling
@@ -222,4 +223,5 @@ References - From Hibernate ORM Website:
 * [Hibernate 7.0 Migration Guide](https://docs.jboss.org/hibernate/orm/7.0/migration-guide/migration-guide.html)
 * [Hibernate 7.1 Migration Guide](https://docs.jboss.org/hibernate/orm/7.1/migration-guide/migration-guide.html)
 * [Hibernate 7.2 Migration Guide](https://docs.hibernate.org/orm/7.2/migration-guide/)
+* [Hibernate 7.4 Migration Guide](https://docs.hibernate.org/orm/7.4/migration-guide/)
 * [Hibernate ORM Releases](https://hibernate.org/orm/releases/)

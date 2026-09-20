@@ -27,7 +27,7 @@ public class GetStudentImagesDemo {
 			
 			// get the student id
 			int theId = 1;
-			Student student = session.get(Student.class, theId);
+			Student student = session.find(Student.class, theId);
 			
 			//print the student detail
 			System.out.println("Student details: "+student);

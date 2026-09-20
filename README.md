@@ -6,10 +6,10 @@ Source code for the course: [Hibernate: Advanced Development Techniques](http://
 
 ## Hibernate Version
 
-This repository uses **Hibernate ORM 7.2.0.Final** with **Java 25**.
+This repository uses **Hibernate ORM 7.4.10.Final** with **Java 26**.
 
 ### Requirements
-- Java 25 or higher
+- Java 26 or higher
 - Maven 3.6+
 - MySQL 9.0+
 
