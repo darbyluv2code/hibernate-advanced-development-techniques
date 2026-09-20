@@ -43,4 +43,4 @@ Also, the GetStudentImagesDemo videos for the sorted set and sorted map modules 
 
 ## Migration Guide
 
-See /appendix/migrate-hibernate-5-to-hibernate-7.md for detailed migration instructions.
+See the [Hibernate 5 to 7.4 Migration Guide](appendix/migrate-hibernate-5-to-hibernate-7.md) for detailed migration instructions.
